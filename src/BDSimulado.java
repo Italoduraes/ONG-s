@@ -1,4 +1,4 @@
-import java.lang.reflect.Array;
+
 import java.util.ArrayList;
 
 
@@ -164,9 +164,9 @@ public class BDSimulado {
 
 	// metodo que dá a ONG a um posto
 			
-			public void AddONGNoPostos(String nomeONG, String responsavel,  double capacidade, boolean veg ) {
+			public void AddONGNoPostos(String nomeONG, String responsavel,  double capacidade ) {
 				
-			Avalicao unir = new Avalicao(getPostoResponsavel (responsavel), capacidade, veg);
+			Avalicao unir = new Avalicao(getPostoResponsavel (responsavel), capacidade);
 				
 			for (int i = 0; i < this.ONG.size(); i++) {
 				if (this.ONG.get(i).getNome().equals(nomeONG)) {
@@ -189,23 +189,6 @@ public class BDSimulado {
 					resultado.add(this.ONG.get(i));
 				}
 			}
-		}
-		
-		return resultado;
-	}
-	
-	
-	public    ArrayList<ONG>  getSeTemVegetarianos(String nomeONG){
-		
-		ArrayList<ONG> resultado= new ArrayList<ONG>();
-		
-		for (int i = 0; i < this.ONG.size(); i++) {
-			for (int j = 0; j < this.ONG.get(i).getAvalicao().size(); j++) {
-				if (this.ONG.get(i).getAvalicao().get(j).isVegetariano() == true);
-				resultado.add(this.ONG.get(i));
-			}
-			
-			
 		}
 		
 		return resultado;

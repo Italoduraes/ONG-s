@@ -49,21 +49,21 @@ public class Principal {
 		
 		//juntar 
 		
-		bds.AddONGNoPostos("hoob hood", "João Pedro", 100000, true);
-		bds.AddONGNoPostos("Fome jamais!", "Athur", 93200, false);
-		bds.AddONGNoPostos("Eu me importo", "ìtalo Durães", 20000, false);
-		bds.AddONGNoPostos("Amigos do bem", "Maria", 900, true);
-//		bds.AddONGNoPostos("Sementes do Amanhã", "Amanda", 53252);
-//		bds.AddONGNoPostos("Ajudando o proximo","Marcus",12344);
-//		bds.AddONGNoPostos("Arca da Vida", "Valdemiro", 12345);
-//		bds.AddONGNoPostos("Fome jamais!", "Athur",  8097);
-//		bds.AddONGNoPostos("Eu me importo", "ìtalo Durães", 500);
-//		bds.AddONGNoPostos("Amigos do bem", "Maria", 100987);
-//		bds.AddONGNoPostos("Ajudando o proximo","Marcus",  500000);
-//		bds.AddONGNoPostos("Sementes do Amanhã", "Amanda", 40000);
-//		bds.AddONGNoPostos("Ajudando o proximo","Marcus", 40000);
-//		bds.AddONGNoPostos("Fome jamais!", "Athur", 5325);
-//		bds.AddONGNoPostos("Arca da Vida", "Valdemiro", 93200);
+		bds.AddONGNoPostos("hoob hood", "João Pedro", 100000);
+		bds.AddONGNoPostos("Fome jamais!", "Athur", 93200);
+		bds.AddONGNoPostos("Eu me importo", "ìtalo Durães", 20000);
+		bds.AddONGNoPostos("Amigos do bem", "Maria", 900);
+		bds.AddONGNoPostos("Sementes do Amanhã", "Amanda", 53252);
+		bds.AddONGNoPostos("Ajudando o proximo","Marcus",12344);
+		bds.AddONGNoPostos("Arca da Vida", "Valdemiro", 12345);
+     	bds.AddONGNoPostos("Fome jamais!", "Athur",  8097);
+     	bds.AddONGNoPostos("Eu me importo", "ìtalo Durães", 500);
+		bds.AddONGNoPostos("Amigos do bem", "Maria", 100987);
+		bds.AddONGNoPostos("Ajudando o proximo","Marcus",  500000);
+		bds.AddONGNoPostos("Sementes do Amanhã", "Amanda", 40000);
+		bds.AddONGNoPostos("Ajudando o proximo","Marcus", 40000);
+		bds.AddONGNoPostos("Fome jamais!", "Athur", 5325);
+		bds.AddONGNoPostos("Arca da Vida", "Valdemiro", 93200);
 		
 		
 		
@@ -75,7 +75,7 @@ public class Principal {
 		ArrayList<ONG> maiores = bds.getBuscaCapac(consume * pessoas);
 		
 		for (int i = 0; i < maiores.size(); i++) {
-			//System.out.println(maiores.get(i).getNome());
+			System.out.println(maiores.get(i).getNome());
 		}
 		
 		
@@ -98,12 +98,7 @@ public class Principal {
 		//  3 questao
 		
 		
-	ArrayList<ONG> SeTemVegetarianos = bds.getSeTemVegetarianos("Maria");
-		
-		for (int i = 0; i < SeTemVegetarianos.size(); i++) {
-		   //System.out.println(SeTemVegetarianos.get(i) );
-		}
-		
+	
 		
 		
 		
