@@ -75,7 +75,7 @@ public class Principal {
 		ArrayList<ONG> maiores = bds.getBuscaCapac(consume * pessoas);
 		
 		for (int i = 0; i < maiores.size(); i++) {
-			System.out.println(maiores.get(i).getNome());
+			//System.out.println(maiores.get(i).getNome());
 		}
 		
 		
@@ -97,7 +97,9 @@ public class Principal {
 		
 		//  3 questao
 		
-		
+		 boolean resultado = bds.getBuscaVeg("Arca da Vida");
+		 
+		// System.out.println(resultado);
 	
 		
 		

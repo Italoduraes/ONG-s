@@ -6,17 +6,18 @@ public class ONG {
 	private String reponsável;
 	private String estado;
 	private ArrayList<Avalicao> avalicao;
-	
+	private ArrayList<Posto> posto;
 	
 	//metodos construtor 
-	
-	public ONG(String nome, String reponsável, String estado) {
-		super();
+	public ONG(String nome, String reponsável, String estado, ArrayList<Avalicao> avalicao, ArrayList<Posto> posto) {
 		this.nome = nome;
 		this.reponsável = reponsável;
 		this.estado = estado;
-		this.avalicao = new ArrayList<>();
+		this.avalicao = avalicao;
+		this.posto = posto;
 	}
+	
+	
 	
 	
 
@@ -28,8 +29,13 @@ public class ONG {
 		         		"Estado: " + this.estado + "\n";
 		}
 	
+		
 	
 	
+   
+
+
+
 // Metodos get e set 
 	
 	
@@ -58,6 +64,12 @@ public class ONG {
 
 	public void setAvalicao(ArrayList<Avalicao> avalicao) {
 		this.avalicao = avalicao;
+	}
+	public ArrayList<Posto> getPosto() {
+		return posto;
+	}
+	public void setPosto(ArrayList<Posto> posto) {
+		this.posto = posto;
 	}
 
 

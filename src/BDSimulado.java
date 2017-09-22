@@ -17,13 +17,13 @@ public class BDSimulado {
 		
 		//Instanciar objetos da classe ONG
 		
-		ONG O1= new ONG("hoob hood", "João Pedro" , "Rio de Janeiro");
-		ONG O2= new ONG("Eu me importo", "ìtalo Durães", "Amazonas");
-		ONG O3= new ONG("Amigos do bem", "Maria", "Amazonas");
-		ONG O4= new ONG("Sementes do Amanhã", "Amanda", "São Paulo");
-		ONG O5= new ONG("Ajudando o proximo","Marcus", "São Paulo");
-		ONG O6= new ONG("Fome jamais!", "Athur", "Amazonas");
-		ONG O7= new ONG("Arca da Vida", "Valdemiro", "Brasilia");
+		ONG O1= new ONG("hoob hood", "João Pedro" , "Rio de Janeiro", null, null);
+		ONG O2= new ONG("Eu me importo", "ìtalo Durães", "Amazonas", null, null);
+		ONG O3= new ONG("Amigos do bem", "Maria", "Amazonas", null, null);
+		ONG O4= new ONG("Sementes do Amanhã", "Amanda", "São Paulo", null, null);
+		ONG O5= new ONG("Ajudando o proximo","Marcus", "São Paulo", null, null);
+		ONG O6= new ONG("Fome jamais!", "Athur", "Amazonas", null, null);
+		ONG O7= new ONG("Arca da Vida", "Valdemiro", "Brasilia", null, null);
 		
 		//Colocar as ONG'S na lista 
 		
@@ -194,7 +194,25 @@ public class BDSimulado {
 		return resultado;
 	}
 	
-	
+	public boolean getBuscaVeg (String nomeONG){
+		
+		boolean resultado = false;
+		
+		
+		for (int i = 0; i < this.ONG.size(); i++) {
+			if(this.ONG.get(i).getNome().equals(nomeONG)){
+			for (int j = 0; j < this.Posto.size(); j++) {
+				if (this.ONG.get(i).getPosto().get(j).isVegetariano()== true){
+					resultado = true;
+				}
+				
+			}
+			}
+		}
+		return resultado;
+		
+		
+	}
 	
 	
 	
